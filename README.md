@@ -10,5 +10,5 @@ use VaxPex\tools\Tools;
 
 Tools::executePacketEvent(function(PacketEvent $event){
     echo $event->toString();
-}, plugin); 
+}, $plugin); 
 ```

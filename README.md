@@ -9,6 +9,6 @@ use VaxPex\events\PacketEvent;
 use VaxPex\tools\Tools;
 
 Tools::executePacketEvent(function(PacketEvent $event){
-    echo $event->toString();
+    echo $event->toString() . PHP_EOL;
 }, $plugin); 
 ```

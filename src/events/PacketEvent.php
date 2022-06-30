@@ -43,13 +43,6 @@ class PacketEvent extends Event implements Cancellable {
 		return $this->origin;
 	}
 
-	/**
-	 * @throws PacketHandlingException
-	 */
-	private function parseClientData(string $clientDataJwt) : ClientData{
-
-	}
-
 	public function toString(): string
 	{
 		$eo = $this->getOrigin()->getPlayerInfo() !== null ? $this->getOrigin()->getPlayerInfo()->getUsername() : $this->getOrigin()->getDisplayName();

@@ -22,8 +22,7 @@ class Tools {
 
 			public function onPacketEvent(PacketEvent $event)
 			{
-				$callback = $this->callback;
-				$callback($event);
+				($this->callback)($event);
 			}
 		};
 		$plugin->getServer()->getPluginManager()->registerEvents($call, $plugin);
